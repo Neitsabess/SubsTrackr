@@ -10,6 +10,7 @@ import { DashBoard } from './Pages/Dashboard';
 import { History } from './Pages/History';
 import { Settings } from './Pages/Settings';
 import { LoadingPage } from './Pages/Loading';
+import Features from './Pages/Features';
 function App() {
 
   const [token, setToken] = useState()
@@ -33,6 +34,11 @@ function App() {
     {
       path: "/",
       element: <LandingPage />
+    },
+    
+    {
+      path: "/features",
+      element: <Features />
     },
     {
       path: "/login",

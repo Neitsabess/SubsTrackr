@@ -1,8 +1,10 @@
 import { Center, HStack, VStack } from '@chakra-ui/react';
 import { Supabase } from '../supabase';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export function LandingPage(){
+    console.log(uuidv4())
     const [fName, setfName] = useState()
     const [lName, setlName] = useState()
     const [EmailAddress, setEmailAddress] = useState()
@@ -38,8 +40,8 @@ export function LandingPage(){
 
 
     return (
-        <form className='LandingPage' onSubmit={HandleSubmit}>
-
+        <form  onSubmit={HandleSubmit}>
+            <div  className='LandingPage'>
             <HStack h={"10vh"} >
             <div className='Logo_Image'> </div>
                 <ul className='LandingPageOptions'>
@@ -49,7 +51,7 @@ export function LandingPage(){
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href={`/features`}>
                             Features
                         </a>
                     </li>
@@ -82,6 +84,7 @@ export function LandingPage(){
                         </VStack>
                     </div>
             </HStack>
+            </div>
         </form>
     )
 }

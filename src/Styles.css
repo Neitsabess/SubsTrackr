@@ -160,3 +160,40 @@
     }
 }
 
+.features {
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 60vh;
+}
+
+.features h2 {
+    color: #ed4a45;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.features p {
+    color: rgba(0, 0, 0, 0.64);
+    font-weight: 350;
+    font-size: 18px;
+    width: 20vw;
+
+}
+
+.features_h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ed4a45;
+    margin-bottom: 7vh;
+}
+
+.features h3 {
+    color: #ed4a45;
+    font-size: 200px;
+    margin-bottom: 10px;
+}
